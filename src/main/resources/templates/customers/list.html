@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: page(title='Customers', content=~{::main})}">
+<main>
+  <form method="get"><input name="q" th:value="${q}" placeholder="Company or email"><button>Search</button></form>
+  <table>
+    <thead><tr><th>Company</th><th>Plan</th><th>Inboxes</th><th>Domains</th><th>Burned</th></tr></thead>
+    <tbody>
+      <tr th:each="c : ${customers}">
+        <td th:text="${c.company}"></td>
+        <td th:text="${c.plan}"></td>
+        <td th:text="${c.inboxes}"></td>
+        <td th:text="${c.domains}"></td>
+        <td th:text="${c.burnedDomains}" th:classappend="${c.burnedDomains > 0} ? 'warn'"></td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: page(title='IP pools', content=~{::main})}">
+<main>
+  <table>
+    <thead><tr><th>Pool</th><th>Warmup</th><th>IPs</th><th>Avg health</th><th>Unhealthy</th></tr></thead>
+    <tbody>
+      <tr th:each="p : ${pools}">
+        <td th:text="${p.name}"></td>
+        <td th:text="${p.warmup_strategy}"></td>
+        <td th:text="${p.ips}"></td>
+        <td th:text="${p.avg_health}"></td>
+        <td th:text="${p.unhealthy}"></td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+</html>

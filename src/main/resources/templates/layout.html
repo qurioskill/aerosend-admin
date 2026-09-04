@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      th:fragment="page(title, content)">
+<head><meta charset="utf-8"><title th:text="${title} + ' · Aerosend Admin'">Admin</title></head>
+<body>
+  <nav>
+    <a th:href="@{/customers}">Customers</a>
+    <a sec:authorize="hasAnyRole('OPS','ADMIN')" th:href="@{/ip-pools}">IP pools</a>
+    <a sec:authorize="hasRole('ADMIN')" th:href="@{/resellers}">Resellers</a>
+    <span sec:authentication="name"></span>
+  </nav>
+  <main th:replace="${content}"></main>
+</body>
+</html>

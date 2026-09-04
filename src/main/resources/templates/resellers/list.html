@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout :: page(title='Resellers', content=~{::main})}">
+<main>
+  <table>
+    <thead><tr><th>Brand</th><th>Custom domain</th><th>Sub-accounts</th><th>Inboxes / mo</th></tr></thead>
+    <tbody>
+      <tr th:each="r : ${resellers}">
+        <td th:text="${r.brand_name}"></td>
+        <td th:text="${r.custom_domain}"></td>
+        <td th:text="${r.sub_accounts}"></td>
+        <td th:text="${r.monthly_inboxes}"></td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+</html>

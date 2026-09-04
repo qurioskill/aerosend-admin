@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: aerosend-admin
+  datasource:
+    url: jdbc:postgresql://localhost:5432/aerosend   # read replica in prod
+    username: aerosend_ro
+    password: aerosend
+aerosend:
+  core-api:
+    base-url: http://localhost:8081
+server:
+  port: 8083
