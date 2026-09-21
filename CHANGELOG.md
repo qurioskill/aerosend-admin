@@ -5,3 +5,4 @@
 - Replace burned domain action
 - Audit log for domain replace
 - IP pool list page
+- Rotate IP action (OPS only)
