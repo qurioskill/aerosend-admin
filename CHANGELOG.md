@@ -6,3 +6,4 @@
 - Audit log for domain replace
 - IP pool list page
 - Rotate IP action (OPS only)
+- Resellers list (ADMIN only)
