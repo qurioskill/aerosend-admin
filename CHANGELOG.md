@@ -8,3 +8,4 @@
 - Rotate IP action (OPS only)
 - Resellers list (ADMIN only)
 - Google SSO login
+- Fix role check on resellers
