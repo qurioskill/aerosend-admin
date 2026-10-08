@@ -11,3 +11,4 @@
 - Fix role check on resellers
 - Customer list limit 100
 - Add plan column
+- IP pools: unhealthy count
