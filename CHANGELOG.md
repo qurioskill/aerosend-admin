@@ -12,3 +12,4 @@
 - Customer list limit 100
 - Add plan column
 - IP pools: unhealthy count
+- Highlight burned >0
