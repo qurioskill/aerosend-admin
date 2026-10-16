@@ -14,3 +14,4 @@
 - IP pools: unhealthy count
 - Highlight burned >0
 - Audit actor from security context
+- Nav hides links by role
