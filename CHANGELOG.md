@@ -16,3 +16,4 @@
 - Audit actor from security context
 - Nav hides links by role
 - Read replica datasource
+- Reseller custom domain column
