@@ -17,3 +17,4 @@
 - Nav hides links by role
 - Read replica datasource
 - Reseller custom domain column
+- Rotate redirects back to pools
