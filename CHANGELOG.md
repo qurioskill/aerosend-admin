@@ -18,3 +18,4 @@
 - Read replica datasource
 - Reseller custom domain column
 - Rotate redirects back to pools
+- Bump thymeleaf extras
