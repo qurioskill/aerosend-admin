@@ -19,3 +19,4 @@
 - Reseller custom domain column
 - Rotate redirects back to pools
 - Bump thymeleaf extras
+- Disable SSO in local profile
